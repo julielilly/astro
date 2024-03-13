@@ -1,0 +1,28 @@
+---
+const {header} = Astro.props;
+---
+<article>
+ <div class="header">
+    <h2>{header}</h2>
+    <p>Show all</p>
+ </div>
+ <div class="flex">
+    <slot />
+</div>
+</article>
+
+<style>
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0.5rem 0;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+</style>

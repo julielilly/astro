@@ -1,25 +1,90 @@
 ---
 import "../styles/style.css";
+import Section from "../components/Section.astro";
 import Card from "../components/Card.astro";
-import Navigation from "../components/Navigation.astro";
-import Button from "../components/Button.astro";
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Navigation />
-		<h1>Astro</h1>
-		<main class="card">
-			<Button variant="primary" size="small">TEXT</Button>
-			<Button variant="secondary" size="medium">TEXT</Button>
-			<Button variant="secondary" size="large">TEXT</Button>
-		</main>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<main id="main">
+		
+		<article id="left_section">
+			<div id="search">
+				<div>
+				<div class="icon"></div>
+				<h3>Home</h3>
+			</div>
+			<div>
+				<div class="icon"></div>
+				<h3>Search</h3>
+			</div>
+			</div>
+			<div id="library">
+				<div>
+					<div class="icon"></div>
+					<h3>Your library</h3>
+				</div>
+			</div>
+
+		</article>
+
+		<article id="discover">
+<header>
+	<div class="icons">
+	<div>
+	<img src="public/back-btn.svg" alt="back button">
+	<img src="public/forward-btn.svg" alt="forward button">
+</div>
+<div>
+	<img src="" alt="">
+	<img src="" alt="">
+	<img src="" alt="">
+</div>
+</div>
+
+<div>
+	<p>All</p>
+	<p>Music</p>
+	<p>Podcasts</p>
+</div>
+</header>
+
+		<Section header="Recently played">
+			<Card img="https://picsum.photos/id/65/150/150"></Card>
+			<Card img="https://picsum.photos/id/68/150/150"></Card>
+			<Card img="https://picsum.photos/id/76/150/150"></Card>
+			<Card img="https://picsum.photos/id/240/150/150"></Card>
+			<Card img="https://picsum.photos/id/331/150/150"></Card>
+		</Section>
+		<Section header="More of what you like">
+			<Card img="https://picsum.photos/id/334/150/150"></Card>
+			<Card img="https://picsum.photos/id/325/150/150"></Card>
+			<Card img="https://picsum.photos/id/349/150/150"></Card>
+			<Card img="https://picsum.photos/id/338/150/150"></Card>
+			<Card img="https://picsum.photos/id/68/150/150"></Card>
+		</Section>
+		<Section header="Mood">
+			<Card img="https://picsum.photos/id/338/150/150"></Card>
+			<Card img="https://picsum.photos/id/349/150/150"></Card>
+			<Card img="https://picsum.photos/id/76/150/150"></Card>
+			<Card img="https://picsum.photos/id/68/150/150"></Card>
+			<Card img="https://picsum.photos/id/331/150/150"></Card>
+		</Section>
+		<Section header="More like this artist">
+			<Card img="https://picsum.photos/id/65/150/150"></Card>
+			<Card img="https://picsum.photos/id/334/150/150"></Card>
+			<Card img="https://picsum.photos/id/325/150/150"></Card>
+			<Card img="https://picsum.photos/id/240/150/150"></Card>
+			<Card img="https://picsum.photos/id/338/150/150"></Card>
+		</Section>
+	</article>
+
+	</main>
+</body>
 </html>

@@ -1,7 +1,68 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+html {
+  background-color: black;
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: lightgrey;
+  font-family: sans-serif;
+}
+
+#discover,
+#search,
+#library {
+  background-color: #191919;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #191919;
+  width: 100%;
+}
+
+icons {
+  display: flex;
+  justify-content: space-between;
+}
+header div {
+  display: flex;
+  gap: 1rem;
+}
+header div img {
+  background-color: black;
+  border-radius: 100%;
+  width: 1.5rem;
+}
+
+header p {
+  background-color: #262626;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 3rem 0 1rem 0;
+}
+header p:first-of-type {
+  background-color: white;
+  color: #191919;
 }

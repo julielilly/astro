@@ -1,17 +1,26 @@
 ---
-const {header} = Astro.props;
+const {img} = Astro.props;
 ---
 <article class="card">
-    <h2>{header}</h2>
-    <p>kortere lorem ipsum</p>
-    <slot />
+    <img src={img}></img>
+    <h3>Title</h3>
+    <p>Lorem ipsum</p>
 </article>
 
 <style>
-    p {
-        color: royalblue;
-    }
-    .card {
-        background-color: azure;
-    }
+.card {
+    background-color: #262626;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border-radius: 0.5rem;
+    height: 17rem;
+}
+.card:hover {
+    background-color: #303030;
+}
+img {
+    border-radius: 0.5rem;
+}
 </style>
